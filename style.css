@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=DynaPuff&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Varela Round', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    color: white;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: 51px;
+    padding: 0 10px;
+}
+.brand span{
+    font-family: 'DynaPuff', cursive;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
