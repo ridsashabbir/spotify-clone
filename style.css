@@ -71,3 +71,22 @@ nav ul li{
     cursor: pointer;
     font-size: 30px;
 }
+.songItem{
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.songItem .songPlayList{
+    cursor: pointer;
+    padding: 5px;
+    justify-content: space-between;
+    font-family: 'DynaPuff', cursive;
+}
+/* .songItem .name:hover{
+    font-family: 'DynaPuff', cursive;
+} */
+.songItem img{
+    width: 90px;
+    border-radius: 10px;
+}
