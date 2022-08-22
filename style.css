@@ -61,6 +61,7 @@ nav ul li{
     margin-top: 5px;
     width: 80vw;
     text-align: center;
+    cursor: pointer;
 }
 
 .bottom .icons{
@@ -79,15 +80,26 @@ nav ul li{
 }
 .songItem .songPlayList{
     cursor: pointer;
-    /* padding: 5px; */
+    padding: 5px;
     /* justify-content: space-between; */
     font-family: 'DynaPuff', cursive;
     color: darkorange;
 }
-/* .songItem .name:hover{
-    font-family: 'DynaPuff', cursive;
-} */
+
 .songItem img{
     width: 90px;
     border-radius: 10px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+.songInfo span{
+    padding: 15px 15px;
+    font-family: 'DynaPuff', cursive;
+    color: darkorange;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in ;
 }
