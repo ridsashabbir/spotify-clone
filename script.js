@@ -22,16 +22,21 @@ masterPlay.addEventListener('click', () => {
         audioElement.play();
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
+        gif.style.opacity = 1;
     }
     else{
         audioElement.pause();
         masterPlay.classList.remove('fa-circle-pause');
         masterPlay.classList.add('fa-circle-play');
+        gif.style.opacity = 0;
     }
 });
 
 // listen to events
-myProgressBar.addEventListener('timeupdate', () => {
+audioElement.addEventListener('timeupdate', () => {
     console.log('timeupdate');
     //update Seekbar
+    progress = parseInt((audioElement.currentTime/audioElement.duration) * 100);
+    console.log(progress);
+    myProgressBar.value = progress;
 });
